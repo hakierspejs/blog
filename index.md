@@ -11,6 +11,18 @@ layout: default
 
 Latest posts written by members of our hackerspace and friends. Best place to spread 
 
+{% for post in site.posts limit: 3 %}
+
+### {{ post.title }}
+
+_Written by [@{{ post.author }}]({{ post.website }}), {{ post.date | date_to_string }}._
+
+{{ post.excerpt }}
+
+_[Read it...]({{post.url}})_
+
+{% endfor %}
+
 ## <a name="more"></a>More
 
 You can find even more content [here](/posts).

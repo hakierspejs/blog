@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>
+  {{ page.date | date_to_string }} - written by <a class="w3-black w3-hover-theme" href="{{ page.website }}">@{{ page.author }}</a>
+</p>
+
+<p>
+<b>Tags:</b> {% for tag in page.tags %}<a href="/tags#{{tag}}">{{ tag }}</a> {% endfor %}
+</p>
+<hr />
+
+{{ content }}
+
+<hr />
+
+<footer>
+  <p>Read more <a href="/posts">posts</a> or take me back to the <a href="/">home</a>.
+</footer>

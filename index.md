@@ -35,3 +35,5 @@ Want to contribute to this blog? Don't hesitate! Open pull request [here](https:
 ## <a name="about"></a>About
 
 We're a group of people passionate about open source, DYI and free culture movement. We organize meetings, share knowledge and do fun projects. Check our [homepage](https://lodz.hackerspace.pl/) and [wiki](https://github.com/hakierspejs/wiki/wiki) for more information.
+
+The source code behind this website can be found [here](https://github.com/hakierspejs/blog). A new blog post can be added [here](https://github.com/hakierspejs/blog/new/main/_posts).

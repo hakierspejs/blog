@@ -8,9 +8,11 @@ layout: default
   {{ page.date | date_to_string }} - written by <a class="w3-black w3-hover-theme" href="{{ page.website }}">@{{ page.author }}</a>
 </p>
 
+{% if page.tags.size > 0 %}
 <p>
 <b>Tags:</b> {% for tag in page.tags %}<a href="/tags#{{tag}}">{{ tag }}</a> {% endfor %}
 </p>
+{% endif %}
 <hr />
 
 {{ content }}
